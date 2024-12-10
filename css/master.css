@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* //////////////////////////////////////////////////////////////////////font famili/////////////// */
+@font-face {
+    font-family: semib;
+    src: url(../fonts/Poppins-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: mycovy;
+    src: url(../fonts/CodeSaver-Regular.otf);
+}
+/* ////////////////////////////////////////////////////////////////////////animation keyframes/////// */
+@keyframes anime1{
+    from{
+        transform: translateY(-20px);
+        opacity: 0;
+        
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes pic1{
+    0%,31%{
+        left: 5%
+    }
+    33%{
+        left: 100%
+    } 
+    33.0000001%,100%{
+        left: -100%;
+    }
+}
+@keyframes pic2{
+    0%,31%{
+        left: -100%
+    }
+    33%,61%{
+        left: 5%
+    }
+    65%{
+        left:100%;
+        
+    }
+    65.00000001%,100%{
+        left: -100%
+    }
+}
+@keyframes pic3{
+    0%,61%{
+        left: -100%
+    }
+    65%,96%{
+        left: 5%
+    }
+    99%{
+        left: 100%
+    }
+    99.00000009%{
+        left: -100%
+    }
+}
+@keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+@keyframes scroll2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+@keyframes cube{
+    from{
+        transform: translateX(-10%)
+    }
+    to{
+        transform: translateX(20%)
+    }
+  }
+
+/* //////////////////////////////////////////////////////////////////////layer////////////// */
+@layer base{
+       
+}
+@layer components{
+    .row{
+        @apply flex flex-wrap w-full; 
+       }
+    .center{
+        @apply justify-center items-center;
+       }
+    
+
+}
+@layer utilities{
+  
+}
